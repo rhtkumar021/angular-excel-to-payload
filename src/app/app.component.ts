@@ -1,5 +1,4 @@
 import { Component, VERSION } from '@angular/core';
-import { read, utils, writeFileXLSX } from 'xlsx';
 import * as XLSX from 'xlsx';
 
 @Component({
