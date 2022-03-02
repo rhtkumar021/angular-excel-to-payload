@@ -33,6 +33,7 @@ export class AppComponent {
       });
     };
     reader.readAsArrayBuffer(target.files[0]);
+    evt.target.value = null;
   }
 
 }
