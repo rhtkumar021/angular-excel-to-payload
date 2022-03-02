@@ -24,8 +24,6 @@ export class AppComponent {
       const ws: XLSX.WorkSheet = wb.Sheets[wsname];
 
       /* save data */
-      //this.data = new Data();
-      //console.log(XLSX.utils.decode_row("10"));
       this.data = XLSX.utils.sheet_to_json(ws, { header: 1 });
       console.log(this.data);
       this.data.forEach(row => {
@@ -36,9 +34,4 @@ export class AppComponent {
     evt.target.value = null;
   }
 
-}
-
-export class Data {
-  ou: string;
-  grId: string;
 }
